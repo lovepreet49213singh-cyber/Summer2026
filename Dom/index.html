@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+<div>
+    <button onclick="changeTheme()" id="toggle" class="togglebtn">toggle</button>
+</div>
+<div id="todo-list">
+    <h1>Todo App</h1>
+    
+
+    <input type="text" id="todo-input" placeholder="Enter Todo">
+    <button onclick="addTodo()">Add</button>
+    <button onclick="alertMessage()">
+       Alert   
+    </button>
+
+    <div id="todo-container"></div>
+</div>
+
+<script>
+
+function changeTheme(){
+    
+}
+
+function alertMessage() {
+    window.alert("This is an alert message!");
+}
+
+
+let count = 1;
+
+function deleteTodo(id) {
+    document.getElementById(id).remove();
+}
+function editTodo(id) {
+  debugger;
+    let todo = document.getElementById(id);
+    let span = todo.querySelector("span");
+    let currentValue = span.textContent.split(". ")[1];
+    debugger;
+    let newValue = prompt("Edit Todo", currentValue);
+    debugger;
+    if(newValue !== null && newValue.trim() !== "") {
+        span.textContent = `${span.textContent.split(". ")[0]}. ${newValue.trim()}`;
+        debugger;
+    }
+}
+
+function addTodo() {
+
+    let todoInput = document.getElementById("todo-input");
+    let value = todoInput.value.trim();
+
+    if(value === "") {
+        alert("Please enter a task");
+        return;
+    }
+
+    let itemId = `item-${count}`;
+
+    let todo = document.createElement("div");
+    todo.id = itemId;
+    todo.className = "item";
+
+    let totalItems =
+        document.querySelectorAll(".item").length + 1;
+
+    todo.innerHTML = `
+        <span>${totalItems}. ${value}</span>
+        <button onclick="editTodo('${itemId}')">
+            Edit
+        </button>
+        <button onclick="deleteTodo('${itemId}')">
+            Delete
+        </button>
+    `;
+
+    document
+        .getElementById("todo-container")
+        .appendChild(todo);
+
+    todoInput.value = "";
+    count++;
+}
+</script>
+<!-- <script src="script.js"></script> -->
+</body>
+</html>

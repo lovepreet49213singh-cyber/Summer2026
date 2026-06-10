@@ -1,0 +1,122 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+/* Todo Container */
+#todo-list {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input */
+#todo-input {
+    width: 75%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+}
+
+#todo-input:focus {
+    border-color: #4CAF50;
+}
+
+/* Add Button */
+#add-btn {
+    padding: 12px 18px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+#add-btn:hover {
+    background: #45a049;
+}
+
+/* Todo Items */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border-left: 5px solid #4CAF50;
+}
+
+/* Task Text */
+.item span {
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Delete Button */
+.item button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item button:hover {
+    background: #e60000;
+}
+
+/* Dark Mode */
+.dark {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark #todo-list {
+    background: #2d2d2d;
+}
+
+.dark h1 {
+    color: white;
+}
+
+.dark #todo-input {
+    background: #444;
+    color: white;
+    border-color: #666;
+}
+
+.dark .item {
+    background: #3a3a3a;
+    color: white;
+}

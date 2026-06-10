@@ -1,0 +1,66 @@
+
+.Myclass{
+    font-size: medium;
+    color: #58a60f;
+    font-family: Arial, Helvetica, sans-serif;
+
+  
+
+
+
+}
+#Idbasestyle{
+    font-size: medium;
+    color: #0f32a6;
+}
+#address{
+    color: #a6230f;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.primarybutton{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(55, 125, 217);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+}
+.secondarybutton{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(217, 55, 55);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+}
+.navbar{
+    background-color: rgb(99, 159, 223);
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+.tabledesign{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #ddd;
+}

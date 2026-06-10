@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+</head>
+<body>
+  <h1>Student Registration form</h1>
+  <h2>Fill the form to register</h2>
+  <form action="/submit" method="post">
+    <label for="name">First Name:</label><br>
+    <input type="text" id="name" name="fname" placeholder="First Name"><br>
+     <label for="name">Last Name:</label><br>
+    <input type="text" id="name" name="lname"><br>
+    
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    
+    <label for="phone number">Phone Number:</label><br>
+    <input type="number" id="phone number" name="phone number"><br>
+    
+    <label for="date of birth">Date of Birth:</label><br>
+    <input type="date" id="date" name="date"><br>
+
+    <label for="gender">Gender:</label><br>
+    <label for="gender" id="gender" name="gender"></label><br>
+    <input type="radio" id="male" name="gender">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender">
+    <label for="other">Other</label><br>
+    
+    <label for="course">Course</label><br>
+    <select id="course" name="course">
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="javascript">JavaScript</option>
+    </select><br><br>
+    
+    <label for="address">Address</label><br>
+    <textarea rows="5" placeholder="Enter your address"></textarea>
+    
+    <div class="checkbox">
+      <input type="checkbox">
+      I agree to the terms & conditions
+    </div>
+    
+    <button type="submit">
+      Register
+    </button>
+    <button type="reset">
+      Reset
+  </form>
+</body>
+</html>

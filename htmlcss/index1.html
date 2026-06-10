@@ -1,0 +1,44 @@
+<head>
+<title>REGISTRATION FORM </title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <form action="submit" method="post">
+    <h2> STUDENT REGISTRATION FORM </h2>
+    <label id="Idbasestyle" for="name"><b>Full Name</b></label><br>
+    <input type="text" id="name" name="name" class="Myclass" placeholder="Enter your full name"><br><br>
+    <label for="email" class="Myclass"><b>Email</b></label><br>
+    <input type="email" class="Myclass" name="email"placeholder="Enter your Email"><br><br>
+    <label for="password"class="Myclass"><b>Password</b></label><br>
+    <input type="password" name="password" id="password" class="Myclass"placeholder="Enter password"><br><br>
+    <label for="phone"class="Myclass"><b>Phone Number</b></label><br>
+    <input type="tel" name="phone" id="phone"class="Myclass" placeholder="Enter phone number"><br><br>
+    <label for="date" class="Myclass"><b>Date Of Birth</b></label><br>
+    <input type="date" name="date" id="date"style="width: 400px;"><br><br>
+    <label for="gender" class="Myclass"><b>Gender</b></label><br><br>
+    <input type="radio" name="gender " id="female" value="female">
+    <label for="female" class="Myclass">Female</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male" class="Myclass">Male</label>
+    <input type="radio" name="gender" id="other" value="other">
+    <label for="other" class="Myclass">Other</label><br><br>
+    <label for="course"class="Myclass"><b>Course</b></label><br>
+    <select name="course" id="course" style="width: 400px;">
+      <option value="course">Select course</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="React">React</option>
+      <option value="JavaScript">JavaScript</option>
+    </select>
+    <br><br>
+    <label for="address" id="address"><b>Address</b></label><br>
+    <textarea name="address" id="address" rows="4" cols="50" placeholder="Enter Your address"></textarea><br><br>
+    <input type="checkbox" name="terms" id="terms" >
+    <label for="terms">I agree to the terms and condtitions</label><br><br>
+    <input type="submit" value="Register" class="primarybutton">
+    <input type="reset" value="Reset" class="secondarybutton">
+    </form>
+
+</body>

@@ -1,0 +1,301 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+header{
+  background: #111;
+  color: white;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+}
+.nav-links li{
+  margin-left: 25px;
+}
+.heading{
+  font-size: 50px;
+  color: #00bcd4;
+  text-align: center;
+  margin-top: 50px;
+}
+
+body{
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+
+header{
+  background: #111;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  margin-bottom: 50px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li{
+  margin-left: 25px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover{
+  color: #00bcd4;
+}
+
+/* Hero Section */
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 10%;
+  gap: 60px;
+  background: white;
+}
+
+.hero-text h1{
+  font-size: 50px;
+}
+
+.hero-text span{
+  color: #00bcd4;
+}
+
+.hero-text h2{
+  margin: 15px 0;
+  color: #666;
+}
+
+.hero-text p{
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.hero-text button{
+  padding: 12px 25px;
+  border: none;
+  background: #00bcd4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover{
+  background: #0097a7;
+  transform: scale(1.05);
+}
+
+.hero-image img{
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Skills */
+
+.skills{
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section-title{
+  margin: top 10px;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.skill-container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+
+}
+
+.skill-card{
+  background: white;
+  padding: 30px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skill-card:hover{
+  transform: translateY(-10px);
+}
+
+.skill-card i{
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+/* Projects */
+
+.projects{
+  padding: 80px 10%;
+  background: white;
+  text-align: center;
+}
+
+.project-container{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+}
+
+.project-card{
+  width: 500px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  margin-top: 20px;
+ 
+}
+
+.project-card:hover{
+  transform: scale(1.05);
+}
+
+/* Contact */
+
+.contact{
+  padding: 80px 10%;
+  text-align: center;
+}
+
+form{
+  max-width: 600px;
+  margin: auto;
+}
+
+form input,
+form textarea{
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form textarea{
+  height: 150px;
+}
+
+form button{
+  padding: 12px 30px;
+  border: none;
+  background: #00bcd4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover{
+  background: #0097a7;
+}
+
+/* Footer */
+
+footer{
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+  .hero{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar{
+    flex-direction: column;
+  }
+
+  .nav-links{
+    margin-top: 15px;
+  }
+
+}
+.text{
+    display: grid;
+    text-align: center;
+    row-gap: 2px;
+    gap:1px ;
+    margin-left: 250px;
+    line-height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+h1,h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin-top: 20px;
+}
+.imagedesign{
+    display: flex;
+     justify-content: center;
+     gap: 60px;
+     
+
+}

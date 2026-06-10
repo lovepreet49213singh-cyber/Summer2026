@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfoliostyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar"  >
+                <h3 >Portfolio</h3> 
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="home">
+            <div class="imagedata">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Olivia</h1>
+                    <h3>Frontend Developer</h3>
+                    <p> I build responsive and beautiful websites using HTML, CSS, and JavaScript </p>
+                    <a href="resume.pdf" class="downloadbtn" style="color: white;"> Download CV</a>
+                </div>
+                <div class="hero-image">
+                <img src="c-1.png" class="imagedesign" alt="Olivia's Photo">
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2 class="heading">My Skills</h2>
+            <div class="skill-container" >
+                <div class="skill-card">
+                    <img src="c-3.png" alt="HTML Icon">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="c-2.png" alt="CSS Icon">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-card">
+                
+                    <img src="c-4.png" alt="JavaScript Icon">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="c-5.png" alt="React Icon">
+                    <h3>React</h3>
+                </div>
+            </div>
+           </section>
+        <section id="projects">
+            <h2 class="heading">Projects</h2>
+            <div class="project-container" >
+                <div class="project-card">
+                    <img src="c-1.png" alt="Netflix Clone Project">
+                    <h3><b> Netflix Clone </b></h3>
+                    <p style="color: rgba(46, 44, 44, 0.86);">Responsive Netflix homepage using HTML & CSS.</p>
+                    <a href="netflixproject" >View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="c-2.png" alt="Spotify UI Project">
+                    <h3><b> Spotify UI </b></h3>
+                    <p style="color: rgba(46, 44, 44, 0.86);">A modern Spotify user interface built with React.</p>
+                    <a href="spotifyproject" >View Project</a>
+                </div>
+            </div>
+        </section>
+            <section id="contact">
+                <h2 class="heading">Contact Me</h2>
+                <form action="#" method="post" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+            <footer>
+                <p>&copy; 2024 Olivia's Portfolio. All rights reserved.</p> 
+            </footer>
+     
+    </body>
+</html>
